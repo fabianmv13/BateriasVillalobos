@@ -109,9 +109,29 @@ section { padding: 80px 5%; text-align: center; }
 
 .card {
     background-color: var(--card-bg);
-    padding: 30px;
-    border-radius: 12px;
-    transition: y 0.3s;
+    padding: 35px 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 204, 0, 0.1); /* Un borde casi invisible */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* El efecto "Hover" cuando el usuario pasa el mouse o interactúa */
+.card:hover {
+    transform: translateY(-8px); /* Eleva la tarjeta suavemente */
+    border-color: var(--accent-yellow); /* El borde se ilumina */
+    box-shadow: 0px 10px 25px rgba(255, 204, 0, 0.15); /* Resplandor amarillo */
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
 }
 
 .card .icon {
@@ -157,4 +177,54 @@ section { padding: 80px 5%; text-align: center; }
     .btn-flotante {
         display: none;
     }
+}
+
+/* Estilos para la Galería */
+.section-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden; /* Corta la imagen para que respete los bordes redondeados */
+    height: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen llene el espacio sin deformarse */
+    transition: transform 0.5s ease;
+}
+
+/* Efecto de zoom en la imagen al pasar el mouse */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Capa oscura con texto que aparece sobre la foto */
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(transparent, rgba(18, 24, 36, 0.9));
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.overlay span {
+    color: var(--accent-yellow);
+    font-weight: bold;
+    font-size: 1.1rem;
 }
