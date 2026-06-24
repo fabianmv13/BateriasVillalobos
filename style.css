@@ -231,22 +231,24 @@ section { padding: 80px 5%; text-align: center; }
 
 /* TESTIMONIOS */
 .testimonials {
-    background-color: #161f30; /* Un tono ligeramente más claro que el fondo general para contrastar */
+    background-color: #161f30;
+    padding: 80px 5%;
+    text-align: center;
 }
-
+/*
 .grid-reviews {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     margin-top: 30px;
-    text-align: left; /* Alineamos el texto a la izquierda para mejor lectura */
-}
+    text-align: left; /* Alineamos el texto a la izquierda para mejor lectura 
+} 
 
 .review-card {
     background-color: var(--bg-dark);
     padding: 30px;
     border-radius: 12px;
-    border-left: 4px solid var(--accent-yellow); /* Detalle elegante en el borde izquierdo */
+    border-left: 4px solid var(--accent-yellow); /* Detalle elegante en el borde izquierdo 
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
@@ -273,4 +275,4 @@ section { padding: 80px 5%; text-align: center; }
 .reviewer-details span {
     color: var(--text-muted);
     font-size: 0.8rem;
-}
+}*/
