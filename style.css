@@ -228,3 +228,49 @@ section { padding: 80px 5%; text-align: center; }
     font-weight: bold;
     font-size: 1.1rem;
 }
+
+/* TESTIMONIOS */
+.testimonials {
+    background-color: #161f30; /* Un tono ligeramente más claro que el fondo general para contrastar */
+}
+
+.grid-reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    text-align: left; /* Alineamos el texto a la izquierda para mejor lectura */
+}
+
+.review-card {
+    background-color: var(--bg-dark);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-yellow); /* Detalle elegante en el borde izquierdo */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.stars {
+    color: var(--accent-yellow);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-style: italic;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.reviewer-details h4 {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.reviewer-details span {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
