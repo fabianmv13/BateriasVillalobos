@@ -34,10 +34,17 @@ header {
     z-index: 100;
 }
 
-header .logo {
+/*header .logo {
     font-size: 1.4rem;
     font-weight: bold;
     color: var(--accent-yellow);
+}*/
+
+/* Controlar el tamaño del logo en el Header */
+.logo-img {
+    height: 50px; /* Ajusta este alto para que se vea elegante */
+    width: auto;  /* Mantiene la proporción original */
+    display: block;
 }
 
 nav a {
